@@ -1,4 +1,4 @@
-"""
+
 def welcome():
     print("welcome to the hundred acre wood")
 
@@ -51,9 +51,8 @@ def sum_honey(hunny_jars):
     print(total)
     return total
 
+hunny_jars = [2, 3, 4, 5]
 sum_honey(hunny_jars)
-
-hunny_jars  = [2, 3, 4, 5]
 
 def doubled(hunny_jars):
     
@@ -98,7 +97,7 @@ def can_pair(item_quantities):
 item_quantities = [3, 2, 4, 6, 8]
 
 print(can_pair(item_quantities))
-"""
+
 
 def split_haycorns(quantity):
     result = []
@@ -112,5 +111,33 @@ def split_haycorns(quantity):
 
 split_haycorns(6)
 split_haycorns(1)
+
+
+def tiggerfy(s):
+    new_string = ""
+
+    for i in s:
+        if i not in "tiger":
+            new_string += i
+
+    print(new_string)
+    return new_string
+
+s = "suspicerous"
+tiggerfy(s)
+
+
+def locate_thistles(items):
+    indices = []
+    
+    for i in range(len(items)):
+        if items[i] == "thistle":
+            indices.append(i)
+
+    print(indices)
+    return indices
+
+items = ["thistle", "stick", "carrot", "thistle", "eeyore's tail"]
+locate_thistles(items)
 
 
