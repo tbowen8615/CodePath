@@ -1,4 +1,4 @@
-"""
+
 class SongNode:
 	def __init__(self, song, next=None):
 		self.song = song
@@ -125,5 +125,5 @@ song3.next = song4
 # song4.next = song2
 
 print(on_repeat(song1))"
-"""
+
 
